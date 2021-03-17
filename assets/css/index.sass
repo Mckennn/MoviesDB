@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+$pink: #e84393
+$fontColor: #dfe6e9
+$bgc: #2d3436
+
+body
+  margin: 0 auto
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+  background-color: $bgc
+  color: $fontColor
+
+  .container
+    width: 95%
+    margin: auto
+
+    header
+      h1
+        text-align: center
+        font-size: 3em
+
+    section#movies
+      display: flex
+      justify-content: center
+      align-items: self-start
+      flex-wrap: wrap
+      $margin: 20px
+
+      article
+        width: calc((100% / 3) - (#{$margin} * 2))
+        min-width: 350px
+        max-width: 400px
+        margin: $margin
+        box-shadow: 0 0 20px $pink
+
+        h3
+          text-align: center
+
+        figure
+
+          img
+            width: 100%
+            height: auto
+
+          figcaption
+            height: 80px
+            overflow-x: hidden
+            overflow-y: scroll
+
+    footer
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 50px
+
+      button
+        width: 30%
+        padding: 20px
+        border: none
+        outline: none
+        font-size: 1.5rem
+
+        &#back
+          background-color: #f0932b
+        &#next
+          background-color: #686de0
+          color: #dff9fb

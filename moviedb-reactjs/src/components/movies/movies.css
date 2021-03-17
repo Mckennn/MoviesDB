@@ -1,0 +1,25 @@
+body .container section#movies {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-wrap: wrap;
+  }
+  body .container section#movies article {
+    width: calc((100% / 3) - (20px * 2));
+    min-width: 350px;
+    max-width: 400px;
+    margin: 20px;
+    box-shadow: 0 0 20px #e84393;
+  }
+  body .container section#movies article h3 {
+    text-align: center;
+  }
+  body .container section#movies article figure img {
+    width: 100%;
+    height: auto;
+  }
+  body .container section#movies article figure figcaption {
+    height: 80px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }

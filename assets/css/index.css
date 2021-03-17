@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #2d3436;
+  color: #dfe6e9;
+}
+body .container {
+  width: 95%;
+  margin: auto;
+}
+body .container header h1 {
+  text-align: center;
+  font-size: 3em;
+}
+body .container section#movies {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-wrap: wrap;
+}
+body .container section#movies article {
+  width: calc((100% / 3) - (20px * 2));
+  min-width: 350px;
+  max-width: 400px;
+  margin: 20px;
+  box-shadow: 0 0 20px #e84393;
+}
+body .container section#movies article h3 {
+  text-align: center;
+}
+body .container section#movies article figure img {
+  width: 100%;
+  height: auto;
+}
+body .container section#movies article figure figcaption {
+  height: 80px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body .container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+body .container footer button {
+  width: 30%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+body .container footer button#back {
+  background-color: #f0932b;
+}
+body .container footer button#next {
+  background-color: #686de0;
+  color: #dff9fb;
+}
+
+/*# sourceMappingURL=index.css.map */
